@@ -15,7 +15,7 @@ function loadUserProfile() {
 
 // Función para obtener y mostrar proyectos
 function loadProjects() {
-  fetch(`https://api.github.com/users/${usuario}/repos?sort=updated&per_page=6&type=owner&direction=desc`)
+  fetch(`https://api.github.com/users/${usuario}/repos?sort=updated&per_page=100&type=owner&direction=desc`)
     .then(response => response.json())
     .then(data => {
       const contenedor = document.getElementById("projectsContainer");
@@ -40,7 +40,7 @@ function loadProjects() {
 
 // Función para obtener y mostrar seguidores
 function loadFollowers() {
-  fetch(`https://api.github.com/users/${usuario}/followers?per_page=6`)
+  fetch(`https://api.github.com/users/${usuario}/followers?per_page=100`)
     .then(response => response.json())
     .then(data => {
       const contenedor = document.getElementById("followersContainer");
