@@ -242,9 +242,7 @@ body {
     text-decoration: underline;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVE*/
 
 @media (max-width: 768px) {
     .container {
